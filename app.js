@@ -12,7 +12,6 @@ const getMeal = () =>{
                 <div class="card-body">
                 <h5 class="card-title food-title text-center">${meal.strMeal}</h5>
                 </div>
-                </div>
                 `;
                 mealItemsDiv.innerHTML = cardHtml;
                 mainNode.appendChild(mealItemsDiv);
