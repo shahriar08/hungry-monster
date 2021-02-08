@@ -2,11 +2,23 @@
 .input-form{
     font-family: FontAwesome;
 }
-.nav-ancor{
+.nav-bold{
     font-weight: 700;
     font-size: 16px;
 }
 .card-body{
-    background-color:#F8F7F5 ;
+    background-color:#f7edde ;
     
+}
+.ingDiv{
+    border-radius: 15px;
+    padding: 40px 50px;
+    box-shadow: 5px 5px 5px 5px #c5bfbf;
+
+}
+.ing-image{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
 }
