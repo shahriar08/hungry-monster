@@ -5,18 +5,17 @@ const getMeal = () =>{
     .then(res => res.json())
     .then(data => {data.meals.forEach(meal => {
                 
-                let mealItemDiv = document.createElement('div');
-                mealItemDiv.className = 'col-md-3 item-columns';
+                let mealItemsDiv = document.createElement('div');
+                mealItemsDiv.className = 'col-md-3 item-columns';
                 let cardHtml = `
-                <div onclick="getIngredientsAndMeasure(${meal.idMeal})"  class="card rounded-3 border-0">
                 <img src = "${meal.strMealThumb}" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title food-title text-center">${meal.strMeal}</h5>
                 </div>
                 </div>
                 `;
-                mealItemDiv.innerHTML = cardHtml;
-                mainNode.appendChild(mealItemDiv);
+                mealItemsDiv.innerHTML = cardHtml;
+                mainNode.appendChild(mealItemsDiv);
             });
         })
     }
